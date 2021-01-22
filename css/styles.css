@@ -12,7 +12,7 @@
     }
     
      :root {
-        --blue-color: rgb(42, 89, 243);
+        --blue-color: rgb(67, 139, 207);
         --text-color: rgb(97, 96, 96);
     }
     
@@ -168,7 +168,7 @@
     }
     
     .banner__title h1 {
-        background-color: rgba(27, 67, 247, 0.767);
+        background-color: rgba(67, 139, 207, 0.575);
         border-radius: 8px;
         text-align: center;
         font-size: 2.2rem;
@@ -208,4 +208,20 @@
         color: black;
         font-size: 1.8rem;
         font-weight: 700;
+    }
+    
+    button {
+        background-color: var(--blue-color);
+        margin: 2rem auto;
+        display: block;
+        border: none;
+        padding: 1rem;
+        width: 50%;
+        border-radius: 2px;
+        box-shadow: 5px 7px 7px #999
+    }
+    
+    button a {
+        color: white;
+        font-size: 1.8rem;
     }
