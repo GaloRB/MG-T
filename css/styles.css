@@ -29,6 +29,32 @@
     ul {
         list-style: none;
     }
+    /* ------------ boton whatsapp -------------------*/
+    
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+    
+    .float:hover {
+        text-decoration: none;
+        color: #25d366;
+        background-color: #fff;
+    }
+    
+    .my-float {
+        margin-top: 16px;
+    }
     /* ------------------ contact bar ---------------------------*/
     
     .container-barra {
@@ -224,4 +250,86 @@
     button a {
         color: white;
         font-size: 1.8rem;
+    }
+    /* -------------- mision-vision -----------------*/
+    
+    .mision-vision {
+        background-image: url(../img/imagen-de-un-montacargas.jpg);
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: soft-light;
+        background-color: #353535dc;
+        background-attachment: fixed;
+        height: 70vh;
+        color: white;
+    }
+    
+    .mision-vision__text {
+        padding: 1rem;
+    }
+    
+    .mision-vision h3 {
+        color: var(--blue-color);
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .mision-vision p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        text-align: justify;
+    }
+    
+    .mision-vision-text-background {
+        background-color: rgba(19, 18, 18, 0.74);
+        border-radius: 15px;
+    }
+    /* -------- servicios -----------*/
+    
+    .servicios h3 {
+        color: var(--blue-color);
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .servicios__list ul {
+        list-style-type: disc;
+    }
+    
+    .servicios__list li {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .servicios__promo p {
+        text-align: center;
+        font-weight: 700;
+        margin: auto 2rem;
+        font-size: 1.7rem;
+    }
+    
+    .distribuidores {
+        background-color: rgb(34, 34, 34);
+    }
+    
+    .distribuidores p {
+        text-align: center;
+        color: rgb(226, 226, 226);
+        padding: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .trabajos-img {
+        margin: 2rem 4rem 2rem 1rem;
+        overflow: hidden;
+    }
+    
+    .trabajos-img img {
+        width: 100%;
+        max-height: 25rem;
+        object-fit: cover;
+        transition: all 0.5s ease;
     }
