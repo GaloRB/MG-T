@@ -143,6 +143,12 @@
         padding: 2rem;
         font-size: 3.2rem;
     }
+    .toca {
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -239,11 +245,14 @@
     }
     .mision-vision p {
         margin-top: 1rem;
-        font-size: 3.6rem;
+        font-size: 2.6rem;
         padding: 1.8rem 2rem;
         text-align: justify;
     }
     /* -------- servicios -----------*/
+    .servicios {
+        margin: auto 4rem;
+    }
     .servicios h3 {
         color: var(--blue-color);
         font-size: 4.8rem;
@@ -258,6 +267,16 @@
         padding: 1rem;
         font-size: 2.9rem;
     }
+    .trabajos-img {
+        margin: 2rem 16rem 2rem 10rem;
+        overflow: hidden;
+    }
+    .trabajos-img img {
+        width: 100%;
+        max-height: 35rem;
+        object-fit: cover;
+        transition: all 0.3s ease;
+    }
     .servicios__promo p {
         text-align: center;
         font-weight: 700;
@@ -270,55 +289,73 @@
         padding: 2rem;
         font-size: 3.2rem;
     }
+    .toca {
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
-/* large display */
+}
 
+/* large display */
 @media(min-width:1200px) {
     /* ---- contact bar -----*/
+    
     .container-barra__contact p {
         font-size: 2.3rem;
         margin: 1rem;
     }
     /* ----- menu -----*/
+    
     .barra-menu {
         display: none;
     }
     /* ----- menu -----*/
+    
     .barra-menu {
         display: none;
     }
+    
     .logo img {
         max-height: 12rem;
         object-fit: contain;
     }
+    
     .nav {
         display: flex;
         background-color: white;
         justify-content: space-around;
     }
+    
     .lista {
         display: flex;
         align-items: center;
     }
+    
     .lista a {
         padding: 4rem 2rem;
         font-size: 3.5rem;
         color: black;
         transition: all 0.3s ease;
     }
+    
     .lista a:hover {
         background-color: rgb(240, 234, 240);
     }
     /* banner*/
+    
     .banner {
         height: 100vh;
     }
+    
     .banner__title h1 span {
         font-size: 4rem;
         color: black;
     }
+    
     .banner__title h1 {
         background-color: rgba(27, 67, 247, 0.767);
         border-radius: 8px;
@@ -331,21 +368,25 @@
         margin-left: 12rem;
     }
     /* nosotros*/
+    
     .nosotros {
         display: flex;
         margin: 5rem 8rem;
     }
     /* mision-vision*/
+    
     .mision-vision__text {
         padding: 1rem;
         margin: 2rem 10rem;
     }
+    
     .mision-vision h3 {
         color: var(--blue-color);
         margin-bottom: 0;
         font-size: 3.8rem;
         text-align: center;
     }
+    
     .mision-vision p {
         margin-top: 1rem;
         font-size: 2.6rem;
@@ -353,30 +394,58 @@
         text-align: justify;
     }
     /* -------- servicios -----------*/
+    
+    .servicios {
+        margin: auto 10rem;
+    }
+    
     .servicios h3 {
         color: var(--blue-color);
         font-size: 4.2rem;
         text-align: center;
         margin-bottom: 0;
     }
+    
     .servicios__list ul {
         list-style-type: disc;
         margin: auto 15rem;
     }
+    
     .servicios__list li {
         padding: 2rem;
         font-size: 2.9rem;
     }
+    
+    .trabajos-img {
+        margin: 2rem 16rem 2rem 10rem;
+        overflow: hidden;
+    }
+    
+    .trabajos-img img {
+        width: 100%;
+        max-height: 35rem;
+        object-fit: cover;
+        transition: all 0.3s ease;
+    }
+    
     .servicios__promo p {
         text-align: center;
         font-weight: 700;
         margin: 4rem 10rem;
         font-size: 3rem;
     }
+    
     .distribuidores p {
         text-align: center;
         color: rgb(226, 226, 226);
         padding: 4rem 12rem;
         font-size: 3.2rem;
+    }
+    
+    .toca {
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
