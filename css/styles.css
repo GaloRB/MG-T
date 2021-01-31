@@ -238,16 +238,24 @@
     
     button {
         background-color: var(--blue-color);
+        cursor: pointer;
         margin: 2rem auto;
         display: block;
         border: none;
         padding: 1rem;
         width: 50%;
         border-radius: 2px;
-        box-shadow: 5px 7px 7px #999
+        box-shadow: 5px 7px 7px #999;
+        transition: all 0.5s ease;
+    }
+    
+    button:hover {
+        background-color: rgb(31, 103, 170);
+        box-shadow: 5px 12px 7px #999
     }
     
     button a {
+        display: block;
         color: white;
         font-size: 1.8rem;
     }
@@ -320,6 +328,7 @@
         color: rgb(226, 226, 226);
         padding: 2rem;
         font-size: 1.8rem;
+        margin-bottom: 0;
     }
     
     .toca {
@@ -344,4 +353,38 @@
     .trabajos-img img:hover {
         filter: grayscale(1);
         transform: scale(1.2);
+    }
+    /* ------------- CONTACTO ---------------*/
+    
+    .contacto {
+        background-color: var(--blue-color);
+    }
+    
+    .contacto h3 {
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+        padding-top: 1.5rem;
+    }
+    
+    .contacto p {
+        text-align: center;
+        color: white;
+        padding: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .mapa {
+        text-align: center;
+    }
+    
+    .contacto h4 {
+        color: white;
+        font-size: 3.5rem;
+        text-align: center;
+        margin: 1rem;
     }
