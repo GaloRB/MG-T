@@ -29,6 +29,89 @@
     ul {
         list-style: none;
     }
+    /** --------------------------animaciones----------------------*/
+    
+    .animacion-arriba {
+        opacity: 0;
+        transition: all 0.7s;
+    }
+    
+    .animacion-arriba-servicios {
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .animacion-abajo {
+        opacity: 0;
+        transition: all 0.7s;
+    }
+    
+    .animacion-abajo-servicios {
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .animacion-derecha {
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    
+    .animacion-izquierda {
+        opacity: 0;
+        transition: all 0.7s;
+    }
+    
+    .mostrar-arriba {
+        animation: mostrar-arriba 1s;
+    }
+    
+    @keyframes mostrar-arriba {
+        0% {
+            transform: translateY(7rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    .mostrar-abajo {
+        animation: mostrar-abajo 1s;
+    }
+    
+    @keyframes mostrar-abajo {
+        0% {
+            transform: translateY(-7rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    .mostrar-derecha {
+        animation: mostrar-derecha 1s;
+    }
+    
+    @keyframes mostrar-derecha {
+        0% {
+            transform: translateX(9rem);
+        }
+        100% {
+            transform: translateX(0rem);
+        }
+    }
+    
+    .mostrar-izquierda {
+        animation: mostrar-izquierda 1s;
+    }
+    
+    @keyframes mostrar-izquierda {
+        0% {
+            transform: translateX(-9rem);
+        }
+        100% {
+            transform: translateX(0rem);
+        }
+    }
     /* ------------ boton whatsapp -------------------*/
     
     .float {
@@ -378,6 +461,10 @@
         margin-top: 0;
     }
     
+    .contacto a {
+        color: white;
+    }
+    
     .mapa {
         text-align: center;
     }
@@ -387,4 +474,15 @@
         font-size: 3.5rem;
         text-align: center;
         margin: 1rem;
+    }
+    
+    .contacto span {
+        display: block;
+        color: white;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    
+    .contacto p:last-of-type {
+        padding-bottom: 1rem;
     }
