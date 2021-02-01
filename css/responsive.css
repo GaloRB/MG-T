@@ -123,6 +123,9 @@
         text-align: center;
         margin-bottom: 0;
     }
+    .servicios__list {
+        margin-right: 10rem;
+    }
     .servicios__list ul {
         list-style-type: disc;
         margin: auto 5rem;
@@ -148,6 +151,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    /* -------------- slide ----------*/
+    .slideshow {
+        width: 95%;
+        position: relative;
     }
     /* ------------- CONTACTO ---------------*/
     .contacto h3 {
@@ -270,6 +278,23 @@
         padding: 1.8rem 2rem;
         text-align: justify;
     }
+    button {
+        background-color: var(--blue-color);
+        cursor: pointer;
+        margin: 2rem auto;
+        display: block;
+        border: none;
+        padding: 2.5rem;
+        width: 50%;
+        border-radius: 2px;
+        box-shadow: 5px 7px 7px #999;
+        transition: all 0.5s ease;
+    }
+    button a {
+        display: block;
+        color: white;
+        font-size: 2.8rem;
+    }
     /* -------- servicios -----------*/
     .servicios {
         margin: auto 4rem;
@@ -315,6 +340,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .slideshow {
+        width: 100%;
+        position: relative;
     }
     /* ------------- CONTACTO ---------------*/
     .contacto h3 {
@@ -431,7 +460,6 @@
     }
     .servicios__list ul {
         list-style-type: disc;
-        margin: auto 15rem;
     }
     .servicios__list li {
         padding: 2rem;
@@ -464,5 +492,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .slider li img {
+        width: 50%;
+        height: 30rem;
+        margin-left: 35rem;
     }
 }

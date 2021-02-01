@@ -112,6 +112,105 @@
             transform: translateX(0rem);
         }
     }
+    /* -------------- slide ----------*/
+    
+    .slideshow {
+        width: 90%;
+        position: relative;
+    }
+    
+    .slider li,
+    ul {
+        width: 100%;
+    }
+    
+    .slider li {
+        overflow: hidden;
+    }
+    
+    .slider li img {
+        width: 100%;
+    }
+    
+    .slider .caption {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 15px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        z-index: 1;
+    }
+    
+    .slider .caption h1 {
+        font-size: 50px;
+    }
+    
+    .slider .caption p {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+    .pagination {
+        position: absolute;
+        top: 102%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pagination li {
+        font-size: 20px;
+        margin: 2px 5px;
+        color: #858585;
+        cursor: pointer;
+    }
+    
+    .left,
+    .right {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 35px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    .left {
+        left: 45px;
+    }
+    
+    .right {
+        right: 10px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .slider .caption p {
+            display: none;
+        }
+        .slider .caption h1 {
+            font-size: 35px;
+        }
+        .left,
+        .right {
+            font-size: 30px;
+        }
+        .slider li img {
+            width: 600px;
+        }
+        .pagination {
+            display: none;
+        }
+    }
     /* ------------ boton whatsapp -------------------*/
     
     .float {
@@ -412,6 +511,13 @@
         padding: 2rem;
         font-size: 1.8rem;
         margin-bottom: 0;
+    }
+    
+    .distribuidores span {
+        color: white;
+        text-align: center;
+        display: block;
+        padding: 1rem;
     }
     
     .toca {
